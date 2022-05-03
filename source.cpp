@@ -2,15 +2,14 @@
 using namespace std;
 
 int addTwoNumbers(int num1, int num2){
-    return num1 + num2;
+    return 0;
 }
 
 int checkAndAdd(int a, int b){
-    int result;
-    if(a >= 0 && b >= 0){
-        result = addTwoNumbers(a, b);
-        return result;
-    } else {
+    int result = addTwoNumbers(a, b);
+    if(result < 0){
         return -1;
+    } else {
+        return result;
     }
 }
